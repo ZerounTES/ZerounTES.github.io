@@ -1,0 +1,483 @@
+﻿<html>
+<script>
+function openTab(tabName) {
+   var i;
+   var x = document.getElementsByClassName("tab");
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+   }
+   document.getElementById(tabName).style.display = "block";
+}
+</script>
+<script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script><script src="https://wow.zamimg.com/widgets/power.js"></script>
+<style>
+html { background-color: #000; };
+.divTable{ display: table; float: left; margin: 10px 10px; }
+.divTableRow { display: table-row; background-color: #000}
+.divTableRow:hover { background-color: #222; }
+.divTableHeading { background-color: #EEE; display: table-header-group; }
+.divTableCell, .divTableHead { border: 1px solid #999999; display: table-cell; padding: 3px 10px; }
+.divPlayer { border: 1px solid #999999; display: table-cell; width: 700px; padding: 3px 10px; text-align: left; vertical-align: middle; word-wrap: normal; color: #ffffff; }
+.divClass { border: 1px solid #999999; display: table-cell; padding: 3px 10px; text-align: center; vertical-align: middle; color: #ffffff; }
+.divDKP { border: 1px solid #999999; display: table-cell; width: 200px%; padding: 3px 10px; text-align: center; vertical-align: middle; color: #ffffff; }
+.divPlayerHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 50%; padding: 3px 10px; text-align: left; background-color: #bbb; }
+.divClassHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 150px; padding: 3px 10px; text-align: center; background-color: #bbb; }
+.divDKPHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 30%; padding: 3px 10px; text-align: center; background-color: #bbb; }
+.divTableHeading { background-color: #EEE; display: table-header-group; font-weight: bold; }
+.divTableFoot { background-color: #EEE; display: table-footer-group; font-weight: bold; }
+.divTableBody { display: table-row-group; }
+</style>
+
+<br /><br />
+<div>
+   <button onclick="openTab('DKP')">DKP Table</button>
+   <button onclick="openTab('DKPHistory')">DKP History</button>
+   <button onclick="openTab('LootHistory')">Loot History</button>
+</div>
+<br /><br />
+<div id="DKP" class="tab"><div class="divTable" style="width: 30%;border: 1px solid #000;">
+   <div class="divTableBody">
+      <div class="divTableRow">
+         <div class="divPlayerHeader">Player</div>
+         <div class="divClassHeader">Class</div>
+         <div class="divDKPHeader">DKP</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Alkor</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">30</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Alurie</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">60</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Asinia</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Boostedbob</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">75</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Broholy</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">35</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Broimmortal</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">0</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Chidoz</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">60</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Cursedx</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Hackbiff</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">30</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Happymix</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">0</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Heidischmidt</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">60</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Igotyourback</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Jitters</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">75</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Lifted</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">0</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Ligma</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">15</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Lolay</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Metri</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">15</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Micez</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Mistical</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">30</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Morg</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">30</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Nefarious</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Neonode</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">15</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Nextopmodel</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">15</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Quaelm</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Reeact</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">60</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Samatsuki</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Setschg</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Shocklife</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Shucks</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">15</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Silvster</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Smileyphase</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">70</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Snurresvett</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Surian</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Taren</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">30</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Tiamat</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">15</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Tryas</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">50</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Typho</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">65</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Undenied</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Velax</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">30</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Zarcon</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">60</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Zeroun</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">45</div>
+      </div>
+   </div>
+</div>
+</div>
+<div id="DKPHistory" class="tab" style="display:none;"><div class="divTable" style="width: 95%;border: 1px solid #000;">
+   <div class="divTableBody">
+      <div class="divTableRow">
+         <div class="divPlayerHeader">Players</div>
+         <div class="divClassHeader" style="width: 4%;">DKP</div>
+         <div class="divDKPHeader">Date/Reason</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Snurresvett, </div>
+         <div class="divClass" style="width: 4%;">30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(10/17/19 19:37:59) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Alkor, </div>
+         <div class="divClass" style="width: 4%;">-5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(10/17/19 00:31:10) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Nefarious, Heidischmidt, Metri, Typho, Chidoz, Broimmortal, Snurresvett, Ligma, Happymix, Samatsuki, Reeact, Smileyphase, Shocklife, Tiamat, Surian, Micez, Hackbiff, Mistical, Igotyourback, Zeroun, Silvster, Broholy, Cursedx, Quaelm, Morg, Asinia, Velax, Alurie, Tryas, Taren, Lolay, Lifted, Zarcon, Neonode, Undenied, Shucks, Boostedbob, Setschg, </div>
+         <div class="divClass" style="width: 4%;">-2.5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Correcting Error<br />(10/17/19 00:30:49) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Setschg, Boostedbob, Shucks, Undenied, Neonode, Zarcon, Lifted, Lolay, Alkor, Taren, Tryas, Alurie, Velax, Asinia, Morg, Quaelm, Cursedx, Broholy, Silvster, Zeroun, Igotyourback, Mistical, Hackbiff, Micez, Surian, Tiamat, Shocklife, Smileyphase, Reeact, Samatsuki, Happymix, Ligma, Snurresvett, Broimmortal, Chidoz, Typho, Nextopmodel, Jitters, Metri, Heidischmidt, Nefarious, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Adding 2 hour interval bonus<br />(10/16/19 23:28:08) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Asinia, Typho, Smileyphase, Heidischmidt, Neonode, Chidoz, Ligma, Surian, Boostedbob, Hackbiff, Igotyourback, Micez, Snurresvett, Broimmortal, Zeroun, Silvster, Samatsuki, Undenied, Shocklife, Metri, Mistical, Happymix, Tiamat, Zarcon, Shucks, Reeact, Nefarious, Lifted, Alurie, Quaelm, Taren, Setschg, Tryas, Broholy, Morg, Cursedx, Lolay, Velax, </div>
+         <div class="divClass" style="width: 4%;">2.5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Raid Completion Bonus<br />(10/16/19 23:17:10) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Smileyphase, </div>
+         <div class="divClass" style="width: 4%;">-5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">DKP Adjust<br />(10/16/19 23:13:14) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Setschg, Boostedbob, Shucks, Undenied, Neonode, Zarcon, Lifted, Lolay, Alkor, Taren, Tryas, Alurie, Velax, Asinia, Morg, Quaelm, Cursedx, Broholy, Silvster, Zeroun, Igotyourback, Mistical, Hackbiff, Micez, Surian, Tiamat, Shocklife, Smileyphase, Reeact, Samatsuki, Happymix, Ligma, Snurresvett, Broimmortal, Chidoz, Typho, Nextopmodel, Jitters, Metri, Heidischmidt, Nefarious, </div>
+         <div class="divClass" style="width: 4%;">-2.5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - fixing raid completion bonus, it was incorrect<br />(10/16/19 23:00:33) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Broimmortal, </div>
+         <div class="divClass" style="width: 4%;">-15</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Molten Core: Golemagg the Incinerator<br />(10/16/19 22:42:41) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Morg, </div>
+         <div class="divClass" style="width: 4%;">-30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">DKP Adjust<br />(10/16/19 22:34:52) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Asinia, Typho, Nextopmodel, Smileyphase, Heidischmidt, Broimmortal, Chidoz, Ligma, Jitters, Surian, Boostedbob, Hackbiff, Igotyourback, Micez, Snurresvett, Neonode, Zeroun, Silvster, Samatsuki, Undenied, Shocklife, Metri, Mistical, Happymix, Tiamat, Zarcon, Shucks, Reeact, Nefarious, Lifted, Alurie, Quaelm, Taren, Setschg, Tryas, Broholy, Morg, Cursedx, Lolay, Velax, </div>
+         <div class="divClass" style="width: 4%;">5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(10/16/19 22:22:40) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ligma, </div>
+         <div class="divClass" style="width: 4%;">-30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Molten Core: Garr<br />(10/16/19 21:42:46) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Tiamat, </div>
+         <div class="divClass" style="width: 4%;">-15</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Molten Core: Garr<br />(10/16/19 21:39:27) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Broholy, </div>
+         <div class="divClass" style="width: 4%;">-10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">DKP Adjust<br />(10/16/19 21:22:04) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Typho, </div>
+         <div class="divClass" style="width: 4%;">-5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Molten Core: Magmadar<br />(10/16/19 21:05:09) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Typho, </div>
+         <div class="divClass" style="width: 4%;">-5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Molten Core: Magmadar<br />(10/16/19 21:03:23) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Tryas, </div>
+         <div class="divClass" style="width: 4%;">-10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Molten Core: Magmadar<br />(10/16/19 20:59:50) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Asinia, Typho, Nextopmodel, Smileyphase, Heidischmidt, Shucks, Chidoz, Ligma, Jitters, Surian, Boostedbob, Hackbiff, Igotyourback, Micez, Snurresvett, Neonode, Zeroun, Silvster, Samatsuki, Undenied, Shocklife, Metri, Mistical, Happymix, Tiamat, Zarcon, Broimmortal, Reeact, Nefarious, Lifted, Alurie, Quaelm, Taren, Setschg, Tryas, Broholy, Morg, Cursedx, Lolay, Velax, </div>
+         <div class="divClass" style="width: 4%;">2.5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">On Time Bonus<br />(10/16/19 20:39:59) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Setschg, Boostedbob, Shucks, Undenied, Neonode, Zarcon, Lifted, Lolay, Alkor, Taren, Tryas, Alurie, Velax, Asinia, Morg, Quaelm, Cursedx, Broholy, Silvster, Zeroun, Igotyourback, Mistical, Hackbiff, Micez, Surian, Tiamat, Shocklife, Smileyphase, Reeact, Samatsuki, Happymix, Ligma, Snurresvett, Broimmortal, Chidoz, Typho, Nextopmodel, Jitters, Metri, Heidischmidt, Nefarious, </div>
+         <div class="divClass" style="width: 4%;">-2.5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - bg<br />(10/16/19 20:39:55) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Asinia, Typho, Nextopmodel, Smileyphase, Heidischmidt, Shucks, Chidoz, Ligma, Jitters, Surian, Boostedbob, Hackbiff, Igotyourback, Micez, Snurresvett, Neonode, Zeroun, Silvster, Samatsuki, Undenied, Shocklife, Metri, Mistical, Happymix, Tiamat, Zarcon, Broimmortal, Reeact, Nefarious, Lifted, Alurie, Quaelm, Taren, Setschg, Tryas, Broholy, Morg, Cursedx, Lolay, Velax, </div>
+         <div class="divClass" style="width: 4%;">2.5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Raid Completion Bonus<br />(10/16/19 20:39:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Tiamat, </div>
+         <div class="divClass" style="width: 4%;">15</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:46:56) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Mistical, Hackbiff, </div>
+         <div class="divClass" style="width: 4%;">15</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:41:55) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Taren, Lifted, Velax, Happymix, </div>
+         <div class="divClass" style="width: 4%;">15</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:41:49) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Setschg, Nextopmodel, </div>
+         <div class="divClass" style="width: 4%;">30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:35:10) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Alkor, Undenied, Neonode, Shucks, </div>
+         <div class="divClass" style="width: 4%;">30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:34:59) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Broholy, Cursedx, Quaelm, </div>
+         <div class="divClass" style="width: 4%;">30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:34:47) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Shocklife, Micez, Surian, </div>
+         <div class="divClass" style="width: 4%;">30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:34:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Nefarious, Metri, Broimmortal, Ligma, Samatsuki, Snurresvett, </div>
+         <div class="divClass" style="width: 4%;">30</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:34:25) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Chidoz, Morg, Heidischmidt, Zarcon, Alurie, Tryas, Reeact, </div>
+         <div class="divClass" style="width: 4%;">45</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:33:31) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Typho, Jitters, Igotyourback, Zeroun, Silvster, Asinia, Boostedbob, Lolay, Smileyphase, </div>
+         <div class="divClass" style="width: 4%;">60</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial DKP bonus<br />(10/16/19 18:30:55) </div>
+      </div>
+   </div>
+</div>
+</div>
+<div id="LootHistory" class="tab" style="display:none;"><div class="divTable" style="width: 50%;border: 1px solid #000;">
+   <div class="divTableBody">
+      <div class="divTableRow">
+         <div class="divPlayerHeader">Loot</div>
+         <div class="divClassHeader">Player</div>
+         <div class="divDKPHeader">From</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=18646" data-wowhead="item=18646"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Asinia</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Majordomo Executus<br />(10/16/19 23:15:13) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=18809" data-wowhead="item=18809"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Happymix</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Majordomo Executus<br />(10/16/19 23:14:13) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=18820" data-wowhead="item=18820"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Lolay</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Golemagg the Incinerator<br />(10/16/19 22:45:16) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=16845" data-wowhead="item=16845"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Shucks</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Golemagg the Incinerator<br />(10/16/19 22:44:14) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=16823" data-wowhead="item=16823"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Igotyourback</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Sulfuron Harbinger<br />(10/16/19 22:28:05) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=16806" data-wowhead="item=16806"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Snurresvett</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Shazzrah<br />(10/16/19 22:09:58) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=16824" data-wowhead="item=16824"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Silvster</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Shazzrah<br />(10/16/19 22:07:24) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=16807" data-wowhead="item=16807"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Broimmortal</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Baron Geddon<br />(10/16/19 21:52:35) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=19142" data-wowhead="item=19142"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Lifted</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Baron Geddon<br />(10/16/19 21:49:57) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=16866" data-wowhead="item=16866"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Nextopmodel</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Garr<br />(10/16/19 21:32:00) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=17071" data-wowhead="item=17071"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Zeroun</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Garr<br />(10/16/19 21:30:30) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=16849" data-wowhead="item=16849"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Neonode</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Gehennas<br />(10/16/19 21:17:05) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://classic.wowhead.com/item=17069" data-wowhead="item=17069"></a> (30 DKP)</div>
+         <div class="divClass" style="width: 20%;">Metri</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Molten Core: Magmadar<br />(10/16/19 21:00:37) </div>
+      </div>
+   </div>
+</div>
+</div>
+</html>
